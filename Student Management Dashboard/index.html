@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <h1>Student Management Dashboard</h1>
+
+    <div class="form-container">
+        <input type="text" id="name" placeholder="Student Name">
+        <input type="text" id="email" placeholder="Email">
+        <input type="number" id="age" placeholder="Age">
+        
+        <select id="course">
+            <option value="">Select Course</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>React</option>
+        </select>
+
+        <input type="number" id="marks" placeholder="Marks (0-100)">
+
+        <button id="addBtn">Add Student</button>
+    </div>
+
+    <div class="controls">
+        <input type="text" id="search" placeholder="Search by Name">
+        <button id="sortBtn">Sort by Marks (High → Low)</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Course</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
